@@ -36,8 +36,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="p-8 bg-white shadow-lg rounded-md">
+    <div className="flex items-center justify-center  min-h-screen bg-gray-100">
+      <div className="p-8 bg-white shadow-lg w-80 rounded-md">
         <h1 className="text-2xl font-bold mb-4">Register</h1>
         <input
           type="text"
@@ -67,7 +67,7 @@ const Register = () => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           className="w-full p-2 border rounded mb-4"
         />
-        <button onClick={handleRegister} className="w-full bg-green-500 text-white p-2 rounded">
+        <button onClick={handleRegister} className="w-full cursor-pointer bg-green-500 text-white p-2 hover:scale-105 rounded">
           Register
         </button>
         <p className="text-sm mt-4">

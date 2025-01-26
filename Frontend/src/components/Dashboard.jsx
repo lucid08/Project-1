@@ -87,14 +87,14 @@ const Dashboard = () => {
         {editId ? (
           <button
             onClick={handleUpdate}
-            className="p-2 bg-blue-500 text-white rounded"
+            className="p-2 bg-blue-500 text-white rounded cursor-pointer hover:scale-105"
           >
             Update
           </button>
         ) : (
           <button
             onClick={handleAdd}
-            className="p-2 bg-green-500 text-white rounded"
+            className="p-2 bg-green-500 text-white rounded cursor-pointer hover:scale-105"
           >
             Add
           </button>
@@ -127,13 +127,13 @@ const Dashboard = () => {
                 <td className="border p-2">
                   <button
                     onClick={() => handleEdit(item)}
-                    className="bg-blue-500 text-white p-1 rounded mr-2"
+                    className="bg-blue-500 text-white p-1 rounded mr-2 cursor-pointer hover:scale-105"
                   >
                     Edit
                   </button>
                   <button
                     onClick={() => handleDelete(item.id)}
-                    className="bg-red-500 text-white p-1 rounded"
+                    className="bg-red-500 text-white p-1 rounded cursor-pointer hover:scale-105"
                   >
                     Delete
                   </button>
